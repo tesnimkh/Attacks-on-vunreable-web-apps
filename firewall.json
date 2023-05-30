@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Block SQL Injection",
+        "regex": "[-'\\\"()#;:<>+{}%\\\\/\\[\\]]|(--)|(\\/\\*)"
+    },
+    {
+        "name": "Block XSS",
+        "regex": "<.*?>"
+    },
+    {
+        "name": "Block Command Injection",
+        "regex": "\\$(\\(|\\{|\\\\\\[)"
+    },
+    {
+        "name": "Blacklist IP",
+        "regex": "",
+        "ip_blacklist": ["127.0.0.2"]
+    },
+    {
+        "name": "Rate Limiting",
+        "regex": "",
+        "requests_per_minute": 100,
+        "ip_whitelist": ["127.0.0.1"]
+    }
+]
+
+
+
+
+
+
