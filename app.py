@@ -11,3 +11,5 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+#add this in the url:
+# http://localhost:5000/?name=<script>alert('This is a malicious script!')</script>
